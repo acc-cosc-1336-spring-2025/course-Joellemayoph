@@ -9,3 +9,15 @@ def use_a_while_loop(num):
         print(counter, counter < num, 'Hello')
         counter = counter + 1 
         #statement that makes the boolean expression false 
+
+#4 1*1 + 2*2 + 3*3 + 4*4 = 30 
+#4 1*1 + 2*2 + 3*3 + 4*4 + 5*5 = 55 
+def get_sum_of_squares(num):
+    
+    sum = 0 
+
+    while(num > 0):
+        sum = sum + num * num 
+        num = num - 1 #will make num > 0 false 
+
+    return sum 

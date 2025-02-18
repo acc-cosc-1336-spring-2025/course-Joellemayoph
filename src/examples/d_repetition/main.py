@@ -1,7 +1,12 @@
 import repetition
 
 def main():
-    repetition.use_a_while_loop(3)
+    num = input("Enter a number: ")#captured from keyboard as a string 
+
+    result = repetition.get_sum_of_squares(int(num)) #int means convert num to a number 
+
+    print(result)                     
+
 
 #run the main function 
-main() #has to be leftalign, tab will not allow it to run 
+main() #has to be leftalign, tab will not allow it to run
