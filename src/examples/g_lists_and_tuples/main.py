@@ -1,3 +1,4 @@
 import lists
 
-lists.arrays_in_memory()
+lists.loop_list_w_for_range()
+

@@ -68,3 +68,31 @@ def arrays_in_memory():
 
      int_array.append(20)
      print(id(int_array[1]))
+
+    #string is a sequence of characters 
+    #arrays are lists that allow you to work with one type of data 
+    #lists involve mixed types of data 
+
+def intro_to_lists():
+     even_numbers = [2, 4, 6, 8, 10] #list 
+     print(even_numbers)
+
+def loop_list_w_while():
+    even_numbers = [2,4,6,8,10]
+    index = 0
+
+    while(index < len(even_numbers)):
+         print(even_numbers[index])
+         index += 1
+
+def loop_list_w_for():
+    even_numbers = [2,4,6,8,10]
+    
+    for num in range(0, len(even_numbers)):
+         print(num, even_numbers[num])
+
+def loop_list_w_for_range():
+     even_numbers = [2,4,6,8,10]
+
+     for i in even_numbers:
+        print(i) 
