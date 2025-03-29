@@ -10,3 +10,4 @@ class Test_Config(unittest.TestCase):
 
     def test_sum_odd_numbers(self):
         self.assertEqual(sum_odd_numbers(7), 16) 
+
