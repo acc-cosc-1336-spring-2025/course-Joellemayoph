@@ -1,7 +1,8 @@
-from lists import get_highest_list_value, get_lowest_list_value
+from tuples import get_p_distance, get_p_distance_matrix
+import ast
 
 def display_menu():
-        print('1-SHOW THE LIST LOW/HIGH VALUES')
+        print('1-GET P DISTANCE MATRIX')
         print('2-EXIT')
 
 def run_menu():
@@ -15,28 +16,15 @@ def run_menu():
 
 def handle_menu(user_option):
     if(user_option == '1'): 
-        inputlist = [] 
+        strands = [0] * 4
 
-        again = 'Y'
+        for index in range(4):
+            inputstrands = input(f'Please enter strand #{index+1} ')
+            strands[index] = ast.literal_eval(inputstrands)
 
-        for i in range(3):
-             ent = int(input('Enter a number: '))
-             inputlist.append(ent)
+        result = get_p_distance_matrix(strands)
 
-        again = input('Would you like to enter another number? Y/N ')
-
-        while again =='Y' or again == 'y':
-             ent=int(input('Enter another number: '))
-             inputlist.append(ent)
-             
-
-             again = input('Would you like to enter another number? Y/N ')
-        
-        high = get_highest_list_value(inputlist)
-        low = get_lowest_list_value(inputlist)
-
-        print(f'The highest value is {high}')
-        print(f'The lowest value is {low}')
+        print(result)
         print()
 
              
